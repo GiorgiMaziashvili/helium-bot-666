@@ -12,7 +12,7 @@ client.on('ready', () => {
     // client.channels.cache.get(channelID).send(`tested`);
     // getStatus(statuses);
 });
-
+console.log('test test');
 client.on('messageCreate', async message => {
     return
     if (message.author.bot) return;
@@ -63,5 +63,5 @@ client.on('message', (message) => {
 // }).catch(console.error)
 
 
-
+console.log(process.env.DISCORDJS_BOT_TOKEN);
 client.login(process.env.DISCORDJS_BOT_TOKEN);
